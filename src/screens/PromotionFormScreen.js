@@ -32,10 +32,15 @@ export default function PromotionFormScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>Cadastrar Promoção</Text>
-        <Text style={styles.headerSubtitle}>
-          Formulário eletrônico para envio de promoções comerciais.
-        </Text>
+        <View>
+          <Text style={styles.headerTitle}>Cadastrar Promoção</Text>
+          <Text style={styles.headerSubtitle}>
+            Formulário eletrônico para envio de promoções comerciais.
+          </Text>
+        </View>
+        <TouchableOpacity onPress={() => navigation.goBack()}>
+          <Text style={styles.backText}>Voltar</Text>
+        </TouchableOpacity>
       </View>
 
       <ScrollView contentContainerStyle={styles.content}>

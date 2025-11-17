@@ -1,4 +1,4 @@
- import React, { useState } from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
@@ -7,6 +7,7 @@ import {
   KeyboardAvoidingView,
   Platform,
   Alert,
+  Image
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { styles } from '../styles/loginStyles';
@@ -21,8 +22,6 @@ export default function LoginScreen() {
       Alert.alert('Atenção', 'Preencha e-mail e senha para continuar.');
       return;
     }
-
-    // Protótipo: após login, vai para o menu com todos os casos de uso
     navigation.replace('MainMenu');
   }
 
@@ -32,6 +31,11 @@ export default function LoginScreen() {
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
       <View style={styles.header}>
+        <Image
+          source={require('../assets/logo-govbr.png')}
+          style={styles.logo}
+          resizeMode="contain">
+        </Image>
         <Text style={styles.appTitle}>Promoções Comerciais</Text>
         <Text style={styles.appSubtitle}>Ministério da Fazenda</Text>
       </View>

@@ -1,7 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F3F4F6',
@@ -25,6 +24,10 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginTop: 4,
     maxWidth: 260,
+  },
+  backText: {
+    color: '#FFFFFF',
+    fontSize: 13,
   },
   logoutButton: {
     borderWidth: 1,

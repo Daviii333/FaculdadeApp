@@ -6,9 +6,13 @@ export const styles = StyleSheet.create({
     backgroundColor: '#0F3057',
   },
   header: {
+    backgroundColor: '#0F3057',
     paddingTop: 40,
     paddingBottom: 16,
     paddingHorizontal: 20,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-end',
   },
   headerTitle: {
     color: '#FFFFFF',
@@ -19,6 +23,10 @@ export const styles = StyleSheet.create({
     color: '#C9D6FF',
     fontSize: 12,
     marginTop: 4,
+  },
+  backText: {
+    color: '#FFFFFF',
+    fontSize: 13,
   },
   content: {
     backgroundColor: '#F3F4F6',

@@ -2,11 +2,11 @@ import React from 'react';
 import {
   View,
   Text,
-  StyleSheet,
   FlatList,
   TouchableOpacity,
   StatusBar,
 } from 'react-native';
+import { styles } from '../styles/solicitationListStyles';
 import { useNavigation } from '@react-navigation/native';
 
 const MOCK_SOLICITATIONS = [
@@ -45,12 +45,6 @@ function getStatusColor(status) {
 export default function SolicitationListScreen() {
   const navigation = useNavigation();
 
-  function handleLogout() {
-    navigation.reset({
-      index: 0,
-      routes: [{ name: 'Login' }],
-    });
-  }
 
   return (
     <View style={styles.container}>
@@ -65,9 +59,9 @@ export default function SolicitationListScreen() {
           </Text>
         </View>
 
-        <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
-          <Text style={styles.logoutText}>Sair</Text>
-        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.goBack()}>
+                 <Text style={styles.backText}>Voltar</Text>
+               </TouchableOpacity>
       </View>
 
       {/* Lista de solicitações */}

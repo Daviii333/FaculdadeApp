@@ -19,7 +19,7 @@ export default function MainMenuScreen() {
         <View>
           <Text style={styles.headerTitle}>Menu Principal</Text>
           <Text style={styles.headerSubtitle}>
-            Casos de uso do sistema de Promoções Comerciais.
+            Sistema de Promoções Comerciais.
           </Text>
         </View>
 

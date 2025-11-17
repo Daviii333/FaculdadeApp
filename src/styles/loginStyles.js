@@ -4,24 +4,30 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0F3057', // azul mais institucional
+    backgroundColor: '#0F3057', 
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 24,
   },
   header: {
-    marginBottom: 32,
+    marginBottom: 20,
     alignItems: 'center',
+  },
+  logo: {
+    marginBottom: 5,
+    width: 150,
+    height: 100,
   },
   appTitle: {
     color: '#FFFFFF',
     fontSize: 22,
-    fontWeight: '700',
+    fontWeight: 'bold',
   },
   appSubtitle: {
     color: '#C9D6FF',
     fontSize: 14,
     marginTop: 4,
+    fontWeight: "500",
   },
   card: {
     width: '100%',

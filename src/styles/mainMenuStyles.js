@@ -20,9 +20,10 @@ export const styles = StyleSheet.create({
   },
   headerSubtitle: {
     color: '#C9D6FF',
-    fontSize: 12,
+    fontSize: 13,
     marginTop: 4,
     maxWidth: 260,
+    fontWeight: '500',
   },
   logoutButton: {
     borderWidth: 1,
